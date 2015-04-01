@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesty", "UnitTesty\UnitTesty.csproj", "{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2737FF80-7CE7-4ECA-9B5E-C6AFF6DE426D}.Release|Win32.ActiveCfg = Release|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{91EA2E7A-1156-4DD6-B6C2-3E8648827C2C}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
