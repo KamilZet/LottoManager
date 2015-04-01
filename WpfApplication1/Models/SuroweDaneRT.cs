@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace WpfApplication1.Models
 {
-    public class SuroweDaneRT : ISuroweDane
+    public class SuroweDaneRT : SuroweDane
     {
 
         public List<byte> PobierzWynik(uint idArg, DateTime dataArg, TypLosowania typArg)

@@ -9,11 +9,19 @@ namespace WpfApplication1.Models
     public class FabrykaLosowań : IFabrykaLosowań
     {
 
-        public FabrykaLosowań(ISuroweDane daArg){
+        public FabrykaLosowań(SuroweDane daArg){
             da = daArg; 
         }
 
-        private ISuroweDane da;
+        private SuroweDane da;
+
+
+        // przeładować funckję, aby można było wyszukiwać losowania stosując szerszy zakres kryteriów:
+        // --- po numerze losowania, jego dacie, po typie losowania
+        // lub węższy zakres kryteriów:
+        // --- tylko po numerze losowania 
+        // (wtedy produkowana jest potencjalnie kolekcja wyników, 
+        // bo np. zarówno lotto, jak i lottoPlus mają taki sam nr losowania)
 
         public Losowanie PobierzLosowanie(uint idArg,DateTime dataArg,TypLosowania typArg )
         {

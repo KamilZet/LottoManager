@@ -6,9 +6,28 @@ using System.Threading.Tasks;
 
 namespace WpfApplication1.Models
 {
-    public interface ISuroweDane
+    public abstract class SuroweDane
     {
-        List<byte> PobierzWynik(uint id, DateTime data, TypLosowania typ);
+#region Konstruktor ---------------------------------------------------------------
+        public SuroweDane()
+        {
+            if (WszystkieLosowania == null)
+                ŁadujLosowania();
+        }
+#endregion
+
+#region Interfejs -----------------------------------------------------------------
+        public abstract List<byte> PobierzWynik(uint id, DateTime data, TypLosowania typ);
+
+
+
+#endregion
+
+        private List<Losowanie> WszystkieLosowania = null;
+        private abstract void ŁadujLosowania()
+        {
+
+        }
 
     }
 }
