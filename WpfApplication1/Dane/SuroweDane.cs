@@ -4,30 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApplication1.Models
+using WpfApplication1.Models;
+
+namespace WpfApplication1.Dane
 {
     public abstract class SuroweDane
     {
 #region Konstruktor ---------------------------------------------------------------
         public SuroweDane()
         {
+            // jeżeli wyniki losowań nie zostały dotychczas pobrane, zrób to!
             if (WszystkieLosowania == null)
                 ŁadujLosowania();
         }
 #endregion
 
 #region Interfejs -----------------------------------------------------------------
-        public abstract List<byte> PobierzWynik(uint id, DateTime data, TypLosowania typ);
+        public abstract List<byte> PobierzWynik(uint id, DateTime data);
 
 
 
 #endregion
 
-        private List<Losowanie> WszystkieLosowania = null;
-        private abstract void ŁadujLosowania()
-        {
+        protected List<Losowanie> WszystkieLosowania = null;
+        protected abstract void ŁadujLosowania();
+        
 
-        }
 
     }
 }

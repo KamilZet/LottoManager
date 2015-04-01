@@ -53,7 +53,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Models\SuroweDaneRT.cs" />
+    <Compile Include="Dane\DaneLottoDb.cs" />
+    <Compile Include="Dane\DaneLottoPlusDb.cs" />
+    <Compile Include="Dane\DaneLottoRT.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,7 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\FabrykaLosowań.cs" />
-    <Compile Include="Models\ISuroweDane.cs" />
+    <Compile Include="Dane\SuroweDane.cs" />
     <Compile Include="Models\IFabrykaLosowań.cs" />
     <Compile Include="Models\Losowanie.cs" />
     <Compile Include="Models\TypLosowania.cs" />

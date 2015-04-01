@@ -8,6 +8,6 @@ namespace WpfApplication1.Models
 {
     public interface IFabrykaLosowań
     {
-        Losowanie PobierzLosowanie(uint id,DateTime data,TypLosowania typ);
+        Losowanie PobierzLosowanie(uint id,DateTime data);
     }
 }
