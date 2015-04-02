@@ -11,10 +11,10 @@ namespace UnitTesty
     public class FabrykaLosowańTEST
     {
         [TestMethod]
-        public void PołączDb()
+        public void PołączBazę()
         {
             DaneLottoDb db = new DaneLottoDb();
-            Assert.IsTrue(db.svrConn.State == System.Data.ConnectionState.Open);
+            Assert.IsTrue(db.PołączenieSerwera.State == System.Data.ConnectionState.Open);
         }
 
         [TestMethod]
@@ -23,9 +23,14 @@ namespace UnitTesty
             FabrykaLosowań fl = new FabrykaLosowań(new DaneLottoRT());
             Losowanie l = fl.PobierzLosowanie(1, new DateTime(2015, 1, 1));
             Assert.IsNotNull(l.wynik);
-
-
+        }
+        [TestMethod]
+        public void PobierzWynikZBazy(){
+            SuroweDane sd = new DaneLottoDb();
+            Assert.IsNotNull(sd.ZobaczWszystkieLosowania);
+                  
+        }
 
         }
     }
-}
+

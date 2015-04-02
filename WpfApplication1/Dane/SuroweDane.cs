@@ -13,7 +13,9 @@ namespace WpfApplication1.Dane
 #region Konstruktor ---------------------------------------------------------------
         public SuroweDane()
         {
-            // jeżeli wyniki losowań nie zostały dotychczas pobrane, zrób to!
+            // włącz połączenie z danymi
+            Inicjalizacja();
+            // jeżeli wyniki losowań nie zostały dotychczas pobrane, zrób to!            
             if (WszystkieLosowania == null)
                 ŁadujLosowania();
         }
@@ -27,8 +29,12 @@ namespace WpfApplication1.Dane
 #endregion
 
         protected List<Losowanie> WszystkieLosowania = null;
+        public List<Losowanie> ZobaczWszystkieLosowania
+        {
+            get { return WszystkieLosowania; }
+        }
         protected abstract void ŁadujLosowania();
-        
+        protected abstract void Inicjalizacja(); 
 
 
     }

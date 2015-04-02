@@ -32,8 +32,11 @@ namespace WpfApplication1.Dane
             // , a nie specjalizowanego.
             WszystkieLosowania = Wyniki().Cast<Losowanie>().ToList();
         }
-       
 
+        protected override void Inicjalizacja()
+        {
+            throw new NotImplementedException();
+        }
 
         private static List<LosowanieLotto> Wyniki(){
             return new List<LosowanieLotto>(){

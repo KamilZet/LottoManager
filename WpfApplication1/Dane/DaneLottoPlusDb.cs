@@ -16,5 +16,9 @@ namespace WpfApplication1.Dane
         {
             throw new NotImplementedException();
         }
+        protected override void Inicjalizacja()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
