@@ -27,7 +27,9 @@ namespace WpfApplication1.Models
 
         public Losowanie PobierzLosowanie(uint idArg,DateTime dataArg)
         {
-            return new LosowanieLotto() { id = idArg, data = dataArg, wynik = da.PobierzWynik(idArg, dataArg) };
+            return new LosowanieLotto() { id = idArg
+                                         ,data = dataArg
+                                         ,wynik = da.PobierzWynik(idArg, dataArg) };
         }
     }
 }

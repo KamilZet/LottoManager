@@ -64,6 +64,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Dane\WszystkieDane.cs" />
     <Compile Include="GUI\Interfaces\IWindowLogic.cs" />
     <Compile Include="GUI\WinWrappers\WinManagOne.cs" />
     <Compile Include="MainWindow.xaml.cs">

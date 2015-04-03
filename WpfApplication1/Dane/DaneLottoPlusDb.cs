@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace WpfApplication1.Dane
 {
-    public class DaneLottoPlusDb : SuroweDane
+    public class DaneLottoPlusDb : DaneLottoDb
     {
         protected override void ŁadujLosowania()
         {
-            throw new NotImplementedException();
+            
         }
         public override List<byte> PobierzWynik(uint id, DateTime data)
         {

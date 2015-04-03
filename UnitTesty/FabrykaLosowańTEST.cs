@@ -30,7 +30,14 @@ namespace UnitTesty
             Assert.IsNotNull(sd.ZobaczWszystkieLosowania);
                   
         }
+        [TestMethod]
+        public void PobierzWszystkieWynikiZDaty()
+        {
+            //pobranie listy WSZYSTKICH (bez względu na typ losowania)
+            //wyników dla określonej daty
 
+
+        }
         }
     }
 

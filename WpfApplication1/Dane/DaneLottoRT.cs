@@ -35,7 +35,8 @@ namespace WpfApplication1.Dane
 
         protected override void Inicjalizacja()
         {
-            throw new NotImplementedException();
+           // pusta metoda wynikająca z zastosowania metody szablonowej
+           // w konstruktorze klasy bazowej
         }
 
         private static List<LosowanieLotto> Wyniki(){
